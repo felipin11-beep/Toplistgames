@@ -1,0 +1,152 @@
+:root {
+  --fundo: #0e1224;
+  --superficie: #171c36;
+  --borda: #2b325a;
+  --texto: #e9eaf6;
+  --texto-suave: #a9aed0;
+  --destaque: #8b7cff;
+  --nota: #ffc857;
+  --erro: #ff7a8a;
+  --ok: #6ee7b7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--superficie);
+  border-bottom: 1px solid var(--borda);
+}
+
+h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.01em; }
+
+nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+
+a { color: var(--destaque); }
+nav a { color: var(--texto-suave); text-decoration: none; padding: 0.25rem 0.1rem; }
+nav a:hover { color: var(--texto); }
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--nota);
+  outline-offset: 2px;
+}
+
+main { width: min(1100px, 100% - 2rem); margin: 0 auto; padding: 2rem 0; }
+section { margin-bottom: 3rem; scroll-margin-top: 5rem; }
+h2 { font-size: 1.6rem; margin: 0 0 0.75rem; }
+h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+#sobre p { max-width: 70ch; color: var(--texto-suave); }
+
+.resumo {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+}
+.resumo dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+}
+.resumo dt { color: var(--texto-suave); font-size: 0.9rem; }
+.resumo dd { margin: 0; font-size: 1.6rem; font-weight: 700; color: var(--nota); }
+.resumo ul { margin: 0; padding-left: 1.2rem; color: var(--texto-suave); }
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+}
+.card:hover { border-color: var(--destaque); }
+.card p { margin: 0 0 0.75rem; color: var(--texto-suave); }
+.card .nota { margin-top: auto; color: var(--texto); }
+.card .nota strong { font-size: 1.5rem; color: var(--nota); }
+.card.destaque { border-color: var(--nota); }
+
+.selo {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: var(--borda);
+  font-size: 0.85rem;
+}
+.topo {
+  align-self: flex-start;
+  margin-bottom: 0.6rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 6px;
+  background: var(--nota);
+  color: #1b1500;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+fieldset { display: grid; gap: 0.4rem; max-width: 560px; padding: 1.25rem; border: 1px solid var(--borda); border-radius: 12px; }
+legend { padding: 0 0.5rem; font-weight: 600; }
+label { margin-top: 0.6rem; }
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--fundo);
+  color: var(--texto);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  font: inherit;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: var(--destaque);
+  color: #0e0a2a;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+
+#mensagem { min-height: 1.5rem; font-weight: 600; }
+#mensagem.erro { color: var(--erro); }
+#mensagem.ok { color: var(--ok); }
+.sugestoes { max-width: 560px; padding-left: 1.2rem; color: var(--texto-suave); }
+#dicas ul { max-width: 70ch; color: var(--texto-suave); }
+
+footer { padding: 1.25rem; text-align: center; color: var(--texto-suave); border-top: 1px solid var(--borda); }
+
+@media (max-width: 600px) {
+  header { position: static; }
+  h2 { font-size: 1.35rem; }
+}
