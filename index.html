@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Os melhores jogos separados por categoria, com nota e resumo de cada um.">
+  <title>Melhores Jogos — Projeto Integrador</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Melhores Jogos</h1>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#rpg">RPG</a>
+      <a href="#aventura">Ação e aventura</a>
+      <a href="#indie">Indies</a>
+      <a href="#corrida">Corrida e esportes</a>
+      <a href="#sugestao">Sugerir jogo</a>
+      <a href="#dicas">Dicas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Os jogos que valem o seu tempo</h2>
+      <p>Esta página reúne jogos muito bem avaliados, organizados em quatro categorias. Cada jogo tem uma nota de 0 a 10, uma classificação e um link para saber mais.</p>
+      <div id="resumo" class="resumo" aria-live="polite">
+        <h3>Resumo da lista</h3>
+        <dl>
+          <div><dt>Jogos na lista</dt><dd id="total">–</dd></div>
+          <div><dt>Nota média</dt><dd id="media">–</dd></div>
+          <div><dt>Melhor nota</dt><dd id="melhor">–</dd></div>
+          <div><dt>Obras-primas (nota 9,5 ou mais)</dt><dd id="obras">–</dd></div>
+        </dl>
+        <h3>Média por categoria</h3>
+        <ul id="medias-categoria"></ul>
+      </div>
+    </section>
+
+    <section id="rpg" data-categoria="RPG" aria-labelledby="titulo-rpg">
+      <h2 id="titulo-rpg">RPG</h2>
+      <div class="grade">
+        <article class="card" data-nota="9.8">
+          <h3>Baldur's Gate 3</h3>
+          <p>RPG por turnos em que cada escolha muda a história e o grupo.</p>
+          <p class="nota"><strong>9,8</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Baldur%27s+Gate+3" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.7">
+          <h3>The Witcher 3: Wild Hunt</h3>
+          <p>Mundo aberto com missões secundárias tão boas quanto a principal.</p>
+          <p class="nota"><strong>9,7</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=The+Witcher+3+Wild+Hunt" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.6">
+          <h3>Elden Ring</h3>
+          <p>Exploração livre e combates exigentes em um mundo sombrio.</p>
+          <p class="nota"><strong>9,6</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Elden+Ring" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="aventura" data-categoria="Ação e aventura" aria-labelledby="titulo-aventura">
+      <h2 id="titulo-aventura">Ação e aventura</h2>
+      <div class="grade">
+        <article class="card" data-nota="9.7">
+          <h3>Red Dead Redemption 2</h3>
+          <p>Faroeste em mundo aberto, com história e ambientação cheias de detalhes.</p>
+          <p class="nota"><strong>9,7</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Red+Dead+Redemption+2" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.6">
+          <h3>Zelda: Breath of the Wild</h3>
+          <p>Aventura de exploração livre, em que quase tudo pode ser testado.</p>
+          <p class="nota"><strong>9,6</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=The+Legend+of+Zelda+Breath+of+the+Wild" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.5">
+          <h3>God of War (2018)</h3>
+          <p>Combate corpo a corpo intenso e a relação entre pai e filho no centro da trama.</p>
+          <p class="nota"><strong>9,5</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=God+of+War+2018" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="indie" data-categoria="Indies" aria-labelledby="titulo-indie">
+      <h2 id="titulo-indie">Indies</h2>
+      <div class="grade">
+        <article class="card" data-nota="9.4">
+          <h3>Hades</h3>
+          <p>Roguelike de ação em que cada tentativa faz a história avançar.</p>
+          <p class="nota"><strong>9,4</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Hades+jogo+eletr%C3%B4nico+Supergiant" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.3">
+          <h3>Hollow Knight</h3>
+          <p>Metroidvania com mundo interligado, chefes marcantes e clima sombrio.</p>
+          <p class="nota"><strong>9,3</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Hollow+Knight" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.2">
+          <h3>Celeste</h3>
+          <p>Plataforma desafiador sobre escalar uma montanha e superar limites.</p>
+          <p class="nota"><strong>9,2</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Celeste+jogo+eletr%C3%B4nico" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="corrida" data-categoria="Corrida e esportes" aria-labelledby="titulo-corrida">
+      <h2 id="titulo-corrida">Corrida e esportes</h2>
+      <div class="grade">
+        <article class="card" data-nota="9.1">
+          <h3>Mario Kart 8 Deluxe</h3>
+          <p>Corrida fácil de aprender, ótima para jogar em grupo.</p>
+          <p class="nota"><strong>9,1</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Mario+Kart+8+Deluxe" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="9.0">
+          <h3>Forza Horizon 5</h3>
+          <p>Corrida em mundo aberto, com grande variedade de carros e cenários.</p>
+          <p class="nota"><strong>9,0</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Forza+Horizon+5" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+        <article class="card" data-nota="8.8">
+          <h3>Rocket League</h3>
+          <p>Futebol com carros, em partidas rápidas e competitivas.</p>
+          <p class="nota"><strong>8,8</strong>/10 <span class="selo"></span></p>
+          <a href="https://pt.wikipedia.org/w/index.php?search=Rocket+League" target="_blank" rel="noopener noreferrer">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="sugestao" aria-labelledby="titulo-sugestao">
+      <h2 id="titulo-sugestao">Sugira um jogo</h2>
+      <form id="form-sugestao" novalidate>
+        <fieldset>
+          <legend>Dados da sugestão</legend>
+          <label for="nome">Nome do jogo</label>
+          <input type="text" id="nome" name="nome" autocomplete="off" required>
+
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Escolha uma categoria</option>
+            <option>RPG</option>
+            <option>Ação e aventura</option>
+            <option>Indies</option>
+            <option>Corrida e esportes</option>
+          </select>
+
+          <label for="nota">Sua nota (0 a 10)</label>
+          <input type="number" id="nota" name="nota" min="0" max="10" step="0.1" required>
+
+          <label for="motivo">Por que ele merece entrar na lista?</label>
+          <textarea id="motivo" name="motivo" rows="3" required></textarea>
+
+          <button type="submit">Enviar sugestão</button>
+        </fieldset>
+        <p id="mensagem" role="status"></p>
+      </form>
+      <ul id="lista-sugestoes" class="sugestoes" aria-label="Sugestões enviadas"></ul>
+    </section>
+
+    <section id="dicas" aria-labelledby="titulo-dicas">
+      <h2 id="titulo-dicas">Dicas para escolher o próximo jogo</h2>
+      <ul>
+        <li>Veja primeiro a categoria de que você mais gosta.</li>
+        <li>Confira os requisitos do jogo para o seu computador ou console.</li>
+        <li>Assista a vídeos de gameplay antes de comprar.</li>
+        <li>Fique de olho em promoções: muitos jogos premiados ficam bem mais baratos com o tempo.</li>
+        <li>Se não conhece um gênero, comece por um jogo com nota alta e boa fama entre iniciantes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido para fins acadêmicos. As notas são avaliações do autor da página.</p>
+  </footer>
+</body>
+</html>
