@@ -1,5 +1,5 @@
 # Toplistgames
-Projeto 
+
 Projeto desenvolvido para a disciplina de **Desenvolvimento Front-end para Web**, com o objetivo de colocar em prática conceitos de HTML5, HTML semântico, acessibilidade, formulários e JavaScript.
 
 ## Sobre o projeto
@@ -37,7 +37,7 @@ README.md
 Clone o repositório:
 
 ```
-git clone https://github.com/SEU-USUARIO/projeto-melhores-jogos.git
+https://github.com/felipin11-beep/Toplistgames.git
 ```
 
 Depois, abra o `index.html` no navegador ou utilize o **Live Server** no VS Code.
