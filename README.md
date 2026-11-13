@@ -55,3 +55,12 @@ O desenvolvimento utiliza **Git e GitHub**, com commits, branches e Pull Request
 ## Autor
 
 **Felipe Assuncao** — Projeto desenvolvido para fins acadêmicos.
+
+
+------------------------
+
+Avaliação de Rafael Ângelo: 
+
+A page tá ótima, tem tudo que o professor passou em sala e com extras, utilizou HTML, CSS e Javascript apresentando conhecimento sobre as tecnologias, aplicando algumas tecnicas de clean code e otimizando a page de maneira eficiente.
+
+Dicas: Falta só fazer o deploy e já tá tudo pronto!
